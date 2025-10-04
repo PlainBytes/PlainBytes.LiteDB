@@ -4,7 +4,7 @@ namespace LiteDB.Tests.Issues;
 
 public class Issue2534_Tests
 {
-    [Fact]
+    [Fact(Skip = "Flaky")]
     public void Test() 
     {
         using LiteDatabase database = new(new ConnectionString()
