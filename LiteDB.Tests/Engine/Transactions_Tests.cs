@@ -269,5 +269,32 @@ namespace LiteDB.Tests.Engine
                 lockerThread?.Join();
             }
         }
+        
+        [Fact]
+        public void Pragma_Set_Inside_Transaction_Should_Throw()
+        {
+            using var db = new LiteDatabase(":memory:");
+
+            // Ensure default value is 0
+            db.UserVersion.Should().Be(0);
+
+            // Begin an explicit transaction
+            db.BeginTrans();
+            try
+            {
+                // Setting a pragma while in a transaction should throw according to Engine/Engine/Pragma.cs
+                Action act = () => db.Pragma(LiteDB.Engine.Pragmas.USER_VERSION, 10);
+                act.Should().Throw<LiteException>();
+            }
+            finally
+            {
+                db.Rollback();
+            }
+
+            // Outside transaction, setting should work
+            db.Pragma(LiteDB.Engine.Pragmas.USER_VERSION, 7);
+            db.Checkpoint();
+            db.UserVersion.Should().Be(7);
+        }
     }
 }
