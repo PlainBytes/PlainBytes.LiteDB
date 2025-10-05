@@ -95,5 +95,41 @@ namespace LiteDB.Tests.Engine
                 r.Should().Be(0);
             }
         }
+        
+        public class Doc
+        {
+            [BsonId]
+            public int Id { get; set; }
+            public string Name { get; set; }
+        }
+        
+        [Fact]
+        public void Sequence_Should_Update_With_Explicit_Numeric_Id()
+        {
+            using var db = new LiteDatabase(":memory:");
+            var col = db.GetCollection<Doc>("items", BsonAutoId.Int32);
+
+            // Insert an explicit higher numeric id
+            col.Insert(new Doc { Id = 100, Name = "a" });
+
+            // Now insert without id, engine should continue sequence and assign 101
+            var d2 = new Doc { Name = "b" };
+            col.Insert(d2);
+
+            d2.Id.Should().Be(101);
+
+            // And another one should be 102
+            var d3 = new Doc { Name = "c" };
+            col.Insert(d3);
+
+            d3.Id.Should().Be(102);
+
+            // Validate stored ids
+            var ids = col.Query().OrderBy(x => x.Id).Select(x => x.Id).ToArray();
+            ids.Length.Should().Be(3);
+            ids[0].Should().Be(100);
+            ids[1].Should().Be(101);
+            ids[2].Should().Be(102);
+        }
     }
 }
