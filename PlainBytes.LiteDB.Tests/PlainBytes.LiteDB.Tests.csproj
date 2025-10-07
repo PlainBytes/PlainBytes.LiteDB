@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
-        <AssemblyName>LiteDB.Tests</AssemblyName>
         <RootNamespace>LiteDB.Tests</RootNamespace>
         <Authors>Maurício David</Authors>
         <Copyright>MIT</Copyright>
@@ -10,10 +9,10 @@
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <NoWarn>1701;1702;1705;1591;0618;0649;2200;2022;</NoWarn>
         <SignAssembly>True</SignAssembly>
-        <AssemblyOriginatorKeyFile>..\LiteDB\LiteDB.snk</AssemblyOriginatorKeyFile>
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <PackageId>PlainBytes.LiteDB.Tests</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -47,7 +46,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\LiteDB\LiteDB.csproj"/>
+        <ProjectReference Include="..\PlainBytes.LiteDB\PlainBytes.LiteDB.csproj" />
     </ItemGroup>
 
 </Project>

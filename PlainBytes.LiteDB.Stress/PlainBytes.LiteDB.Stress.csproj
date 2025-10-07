@@ -4,10 +4,11 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net9.0</TargetFramework>
         <IsPackable>false</IsPackable>
+        <RootNamespace>LiteDB.Stress</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\LiteDB\LiteDB.csproj"/>
+        <ProjectReference Include="..\PlainBytes.LiteDB\PlainBytes.LiteDB.csproj" />
     </ItemGroup>
 
 </Project>
