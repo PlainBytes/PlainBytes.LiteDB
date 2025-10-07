@@ -3,41 +3,36 @@
     <PropertyGroup>
         <TargetFrameworks>net8.0;</TargetFrameworks>
         
-        <AssemblyVersion>5.0.21</AssemblyVersion>
-        <FileVersion>5.0.21</FileVersion>
-        <VersionPrefix>5.0.21</VersionPrefix>
-        <PackageVersion>5.0.21</PackageVersion>
-        
-        <Authors>Maurício David</Authors>
+        <Authors>PlainBytes contrubutors and Maurício David original author</Authors>
         <Product>LiteDB</Product>
         <Description>LiteDB - A lightweight embedded .NET NoSQL document store in a single datafile</Description>
         <Copyright>MIT</Copyright>
         <NeutralLanguage>en-US</NeutralLanguage>
-        <Title>LiteDB</Title>
-        <PackageId>LiteDB</PackageId>
+        <Title>PlainBytes.LiteDB</Title>
+        <PackageId>PlainBytes.LiteDB</PackageId>
         <PackageTags>database nosql embedded</PackageTags>
         <PackageIcon>icon_64x64.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://www.litedb.org</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/mbdavid/LiteDB</RepositoryUrl>
+        <RepositoryUrl>https://github.com/PlainBytes/PlainBytes.LiteDB</RepositoryUrl>
         
         <RepositoryType>git</RepositoryType>
-        <RootNamespace>LiteDB</RootNamespace>
-        <AssemblyName>LiteDB</AssemblyName>
 
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>1701;1702;1705;1591;0618;0649;2200;2022;</NoWarn>
-        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\LiteDB.xml</DocumentationFile>
-        <SignAssembly Condition="'$(OS)'=='Windows_NT'">true</SignAssembly>
-        <AssemblyOriginatorKeyFile Condition="'$(Configuration)' == 'Release'">LiteDB.snk</AssemblyOriginatorKeyFile>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\PlainBytes.LiteDB.xml</DocumentationFile>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
         <DefineConstants>TRACE;DEBUG</DefineConstants>
     </PropertyGroup>
-
+    
+    <ItemGroup>
+        <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+    </ItemGroup>
+    
     <!-- Begin References -->
     <ItemGroup>
         <None Include="..\LICENSE" Pack="true" PackagePath=""/>

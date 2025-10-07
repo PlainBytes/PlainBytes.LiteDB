@@ -4,6 +4,7 @@
 		<OutputType>Exe</OutputType>
 		<TargetFrameworks>net8.0;net9.0;</TargetFrameworks>
         <IsPackable>false</IsPackable>
+        <RootNamespace>LiteDB.Benchmarks</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -11,7 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\LiteDB\LiteDB.csproj" />
+	  <ProjectReference Include="..\PlainBytes.LiteDB\PlainBytes.LiteDB.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -2,8 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
-        <AssemblyName>LiteDB.Shell</AssemblyName>
-        <PackageId>LiteDB.Shell</PackageId>
+        <PackageId>PlainBytes.LiteDB.Shell</PackageId>
         <OutputType>Exe</OutputType>
         <RootNamespace>LiteDB.Shell</RootNamespace>
         <AssemblyVersion>5.0.6.0</AssemblyVersion>
@@ -19,7 +18,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\LiteDB\LiteDB.csproj"/>
+        <ProjectReference Include="..\PlainBytes.LiteDB\PlainBytes.LiteDB.csproj" />
     </ItemGroup>
 
 </Project>
