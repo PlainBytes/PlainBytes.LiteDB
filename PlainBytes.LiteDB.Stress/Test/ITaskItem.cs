@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml;
 
-namespace LiteDB.Stress
+namespace PlainBytes.LiteDB.Stress
 {
     public interface ITestItem
     {

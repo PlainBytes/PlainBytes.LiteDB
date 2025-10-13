@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 using Xunit;
 
-using static LiteDB.Tests.Issues.Issue1838_Tests;
+using static PlainBytes.LiteDB.Tests.Issues.Issue1838_Tests;
 
-namespace LiteDB.Tests.Issues;
+namespace PlainBytes.LiteDB.Tests.Issues;
 
 public class Pull2468_Tests
 {

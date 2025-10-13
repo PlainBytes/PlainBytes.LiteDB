@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class Document_Test
     {

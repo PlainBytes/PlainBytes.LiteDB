@@ -5,7 +5,7 @@ using System.Linq;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Mapper
+namespace PlainBytes.LiteDB.Tests.Mapper
 {
     public class StructFields_Tests
     {

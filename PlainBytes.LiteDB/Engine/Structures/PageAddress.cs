@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Represents a page address inside a page structure - index could be byte offset position OR index in a list (6 bytes)

@@ -3,10 +3,10 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using Xunit;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class Pragma_Tests
     {

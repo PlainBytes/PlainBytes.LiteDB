@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Document
+namespace PlainBytes.LiteDB.Tests.Document
 {
     public class Bson_Tests
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     public interface IBsonDataReader : IDisposable
     {

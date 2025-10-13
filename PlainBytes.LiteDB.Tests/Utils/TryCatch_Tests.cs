@@ -1,8 +1,8 @@
 using System;
-using LiteDB.Utils;
+using PlainBytes.LiteDB.Utils;
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class TryCatch_Tests
 {

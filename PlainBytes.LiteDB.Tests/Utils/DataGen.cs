@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-namespace LiteDB.Tests
+namespace PlainBytes.LiteDB.Tests
 {
     public class DataGen
     {

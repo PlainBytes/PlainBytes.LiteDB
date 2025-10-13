@@ -1,4 +1,4 @@
-﻿namespace LiteDB.Engine
+﻿namespace PlainBytes.LiteDB.Engine
 {
     public enum FileOrigin : byte
     {

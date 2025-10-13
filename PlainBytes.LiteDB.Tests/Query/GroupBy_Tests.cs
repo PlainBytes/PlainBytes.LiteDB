@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Xunit;
 
-namespace LiteDB.Tests.QueryTest
+namespace PlainBytes.LiteDB.Tests.QueryTest
 {
     public class GroupBy_Tests
     {

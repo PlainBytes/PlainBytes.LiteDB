@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using System.Runtime.InteropServices;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     internal static class IOExceptionExtensions
     {

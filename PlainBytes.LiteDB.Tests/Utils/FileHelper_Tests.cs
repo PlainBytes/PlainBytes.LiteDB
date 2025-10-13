@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class FileHelper_Tests
 {

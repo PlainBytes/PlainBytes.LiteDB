@@ -8,9 +8,9 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Represent page buffer to be read/write using FileMemory

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using LiteDB;
+using PlainBytes.LiteDB;
 using AwesomeAssertions;
 using Xunit;
 using System.Globalization;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class Database_Pragmas_Tests
     {

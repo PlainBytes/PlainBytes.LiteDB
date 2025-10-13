@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Manage multiple open readonly Stream instances from same source (file). 

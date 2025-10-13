@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using Xunit;
 
-namespace LiteDB.Tests.Utils.Extensions;
+namespace PlainBytes.LiteDB.Tests.Utils.Extensions;
 
 public class IOExceptionExtensions_Tests
 {

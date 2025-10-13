@@ -3,7 +3,7 @@ using System;
 using System.Reflection;
 using Xunit;
 
-namespace LiteDB.Tests.Mapper
+namespace PlainBytes.LiteDB.Tests.Mapper
 {
     public class Mapper_Tests
     {

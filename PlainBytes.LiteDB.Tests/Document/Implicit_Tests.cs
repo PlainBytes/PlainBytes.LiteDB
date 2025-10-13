@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace LiteDB.Tests.Document
+namespace PlainBytes.LiteDB.Tests.Document
 {
     public class Implicit_Tests
     {

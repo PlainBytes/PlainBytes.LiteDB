@@ -1,13 +1,13 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using Xunit;
 using System.Threading.Tasks;
 using System.Threading;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class Disk_Tests
     {

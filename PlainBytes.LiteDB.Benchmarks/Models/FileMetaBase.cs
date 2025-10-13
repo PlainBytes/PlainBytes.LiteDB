@@ -1,6 +1,6 @@
 using System;
 
-namespace LiteDB.Benchmarks.Models
+namespace PlainBytes.LiteDB.Benchmarks.Models
 {
     public class FileMetaBase
     {

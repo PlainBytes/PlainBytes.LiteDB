@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace LiteDB.Tests.QueryTest
+namespace PlainBytes.LiteDB.Tests.QueryTest
 {
     public class PersonQueryData : IDisposable
     {

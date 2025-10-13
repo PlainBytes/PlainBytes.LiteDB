@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Implement basic document loader based on data service/bson reader

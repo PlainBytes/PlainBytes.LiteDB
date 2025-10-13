@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 
-namespace LiteDB.Stress
+namespace PlainBytes.LiteDB.Stress
 {
     public class SqlTaskItem : ITestItem
     {

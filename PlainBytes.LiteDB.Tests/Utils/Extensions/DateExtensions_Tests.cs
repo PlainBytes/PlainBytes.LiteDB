@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace LiteDB.Tests.Utils.Extensions;
+namespace PlainBytes.LiteDB.Tests.Utils.Extensions;
 
 public class DateExtensions_Tests
 {

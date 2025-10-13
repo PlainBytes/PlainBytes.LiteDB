@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Class to help extend IndexNode key up to 1023 bytes length (for string/byte[]) using 2 first bits in BsonType

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 using Xunit;
 
-namespace LiteDB.Tests.Issues;
+namespace PlainBytes.LiteDB.Tests.Issues;
 
 public class Issue2471_Test
 {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class InvalidFile_Tests
     {
@@ -16,7 +16,7 @@ namespace LiteDB.Tests.Database
             string dbName = "invalidDb";
             string fileName = $"{dbName}.db";
             
-            // Create an invalid LiteDB database file for testing
+            // Create an invalid PlainBytes.LiteDB database file for testing
             File.WriteAllText(fileName, "Invalid content");
 
             // Verify the file exists and content is correct
@@ -48,7 +48,7 @@ namespace LiteDB.Tests.Database
             string dbName = "largeInvalidDb";
             string fileName = $"{dbName}.db";
 
-            // Create an invalid LiteDB database file with content larger than 16KB for testing
+            // Create an invalid PlainBytes.LiteDB database file with content larger than 16KB for testing
             string invalidContent = new string('a', 16 * 1024 + 1);
             File.WriteAllText(fileName, invalidContent);
 
@@ -77,7 +77,7 @@ namespace LiteDB.Tests.Database
         [Fact(Skip = "Needs review")]
         public void Test_AddDatabase_InvalidDatabase_MemoryStream()
         {
-            // Create an invalid LiteDB database content
+            // Create an invalid PlainBytes.LiteDB database content
             byte[] invalidContent = System.Text.Encoding.UTF8.GetBytes("Invalid content");
 
             using (var stream = new MemoryStream(invalidContent))
@@ -101,7 +101,7 @@ namespace LiteDB.Tests.Database
         [Fact(Skip = "Needs review")]
         public void Test_AddDatabase_InvalidDatabase_LargeFile_MemoryStream()
         {
-            // Create an invalid LiteDB database content larger than 16KB
+            // Create an invalid PlainBytes.LiteDB database content larger than 16KB
             byte[] invalidContent = new byte[16 * 1024 + 1];
             for (int i = 0; i < invalidContent.Length; i++) invalidContent[i] = (byte)'a';
 

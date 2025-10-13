@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace LiteDB.Tests
+namespace PlainBytes.LiteDB.Tests
 {
     public class TempFile : IDisposable
     {

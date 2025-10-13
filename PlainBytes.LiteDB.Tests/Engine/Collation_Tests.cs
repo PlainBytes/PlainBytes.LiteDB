@@ -1,12 +1,12 @@
 ﻿using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using Xunit;
 
-namespace LiteDB.Tests.Engine
+namespace PlainBytes.LiteDB.Tests.Engine
 {
     public class Collation_Tests
     {

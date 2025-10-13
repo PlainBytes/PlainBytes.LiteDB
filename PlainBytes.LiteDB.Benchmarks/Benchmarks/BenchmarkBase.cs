@@ -1,6 +1,6 @@
 using BenchmarkDotNet.Attributes;
 
-namespace LiteDB.Benchmarks.Benchmarks
+namespace PlainBytes.LiteDB.Benchmarks.Benchmarks
 {
     public abstract class BenchmarkBase
     {

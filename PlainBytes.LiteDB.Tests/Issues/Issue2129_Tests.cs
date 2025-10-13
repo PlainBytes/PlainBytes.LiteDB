@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace LiteDB.Tests.Issues
+namespace PlainBytes.LiteDB.Tests.Issues
 {
     public class Issue2129_Tests
     {

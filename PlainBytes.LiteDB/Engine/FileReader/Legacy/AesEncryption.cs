@@ -2,9 +2,9 @@
 using System.Security.Cryptography;
 using System.IO;
 using System.Text;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Encryption AES wrapper to encrypt data pages

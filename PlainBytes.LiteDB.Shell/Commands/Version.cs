@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace LiteDB.Shell.Commands
+namespace PlainBytes.LiteDB.Shell.Commands
 {
     [Help(
         Name = "version",
         Syntax = "ver",
-        Description = "Show LiteDB version"
+        Description = "Show PlainBytes.LiteDB version"
     )]
     internal class Version : IShellCommand
     {

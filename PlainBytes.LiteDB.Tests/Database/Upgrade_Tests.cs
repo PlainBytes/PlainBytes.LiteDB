@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using LiteDB;
+using PlainBytes.LiteDB;
 using AwesomeAssertions;
 using Xunit;
 using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class Upgrade_Tests
     {

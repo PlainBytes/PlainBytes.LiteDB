@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class StringEncoding_Tests
 {

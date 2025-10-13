@@ -1,12 +1,12 @@
 using AwesomeAssertions;
 
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 
 using System.IO;
 
 using Xunit;
 
-namespace LiteDB.Tests.Database;
+namespace PlainBytes.LiteDB.Tests.Database;
 
 public class DocumentUpgrade_Tests
 {

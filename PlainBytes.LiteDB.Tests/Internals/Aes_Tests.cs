@@ -4,10 +4,10 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
 using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using Xunit;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class Aes_Tests
     {

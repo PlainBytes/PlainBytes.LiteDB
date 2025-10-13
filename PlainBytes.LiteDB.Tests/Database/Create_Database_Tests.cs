@@ -2,10 +2,10 @@
 using System.IO;
 using System.Linq;
 using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using Xunit;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class Create_Database_Tests
     {

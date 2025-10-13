@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class Tokenizer_Tests
 {

@@ -4,7 +4,7 @@ using Xunit;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace LiteDB.Tests.Issues
+namespace PlainBytes.LiteDB.Tests.Issues
 {
 
     public class Issue1865_Tests

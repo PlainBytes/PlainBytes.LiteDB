@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LiteDB.Shell
+namespace PlainBytes.LiteDB.Shell
 {
     public class InputCommand
     {

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Async implementation of ManualResetEvent

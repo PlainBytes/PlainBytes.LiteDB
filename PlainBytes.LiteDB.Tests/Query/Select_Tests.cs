@@ -3,7 +3,7 @@ using System.Linq;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.QueryTest
+namespace PlainBytes.LiteDB.Tests.QueryTest
 {
     public class Select_Tests : PersonQueryData
     {

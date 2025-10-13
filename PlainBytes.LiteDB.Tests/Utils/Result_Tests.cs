@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class Result_Tests
 {

@@ -2,9 +2,9 @@
 using System.Buffers;
 using System.Collections.Generic;
 using System.Text;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Write data types/BSON data into byte[]. It's forward only and support multi buffer slice as source

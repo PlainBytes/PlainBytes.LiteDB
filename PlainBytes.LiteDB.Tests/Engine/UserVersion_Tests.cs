@@ -1,7 +1,7 @@
 ﻿using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Engine
+namespace PlainBytes.LiteDB.Tests.Engine
 {
     public class UserVersion_Tests
     {

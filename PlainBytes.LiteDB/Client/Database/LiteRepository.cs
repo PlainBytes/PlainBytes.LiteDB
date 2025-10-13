@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
-    /// The LiteDB repository pattern. A simple way to access your documents in a single class with fluent query api
+    /// The PlainBytes.LiteDB repository pattern. A simple way to access your documents in a single class with fluent query api
     /// </summary>
     public class LiteRepository : ILiteRepository
     {
@@ -26,7 +26,7 @@ namespace LiteDB
         #region Ctor
 
         /// <summary>
-        /// Starts LiteDB database an existing Database instance
+        /// Starts PlainBytes.LiteDB database an existing Database instance
         /// </summary>
         public LiteRepository(ILiteDatabase database)
         {
@@ -34,7 +34,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Starts LiteDB database using a connection string for file system database
+        /// Starts PlainBytes.LiteDB database using a connection string for file system database
         /// </summary>
         public LiteRepository(string connectionString, BsonMapper mapper = null)
         {
@@ -42,7 +42,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Starts LiteDB database using a connection string for file system database
+        /// Starts PlainBytes.LiteDB database using a connection string for file system database
         /// </summary>
         public LiteRepository(ConnectionString connectionString, BsonMapper mapper = null)
         {
@@ -50,7 +50,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Starts LiteDB database using a Stream disk
+        /// Starts PlainBytes.LiteDB database using a Stream disk
         /// </summary>
         public LiteRepository(Stream stream, BsonMapper mapper = null, Stream logStream = null)
         {

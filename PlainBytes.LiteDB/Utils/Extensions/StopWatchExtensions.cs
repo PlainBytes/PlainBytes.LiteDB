@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace LiteDB.Utils.Extensions
+namespace PlainBytes.LiteDB.Utils.Extensions
 {
     public static class StopWatchExtensions
     {

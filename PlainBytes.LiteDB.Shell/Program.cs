@@ -1,10 +1,10 @@
-﻿namespace LiteDB.Shell
+﻿namespace PlainBytes.LiteDB.Shell
 {
     internal class Program
     {
         /// <summary>
         /// Opens console shell app. Usage:
-        /// LiteDB.Shell [myfile.db] --param1 value1 --params2 "value 2"
+        /// PlainBytes.LiteDB.Shell [myfile.db] --param1 value1 --params2 "value 2"
         /// Parameters:
         /// --exec "command"   : Execute an shell command (can be multiples --exec)
         /// --run script.txt   : Run script commands file

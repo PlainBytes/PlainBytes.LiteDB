@@ -2,7 +2,7 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace LiteDB.Shell
+namespace PlainBytes.LiteDB.Shell
 {
     /// <summary>
     /// A StringScanner is state machine used in text parsers based on regular expressions

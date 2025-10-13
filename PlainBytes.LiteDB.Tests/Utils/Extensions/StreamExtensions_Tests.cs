@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Xunit;
 
-namespace LiteDB.Tests.Utils.Extensions;
+namespace PlainBytes.LiteDB.Tests.Utils.Extensions;
 
 public class StreamExtensions_Tests
 {

@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using Xunit;
 
-namespace LiteDB.Tests.Client;
+namespace PlainBytes.LiteDB.Tests.Client;
 
 public class RegexResolver_Tests
 {

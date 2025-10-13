@@ -1,4 +1,4 @@
-namespace LiteDB.Benchmarks.Benchmarks
+namespace PlainBytes.LiteDB.Benchmarks.Benchmarks
 {
     internal static class Constants
     {

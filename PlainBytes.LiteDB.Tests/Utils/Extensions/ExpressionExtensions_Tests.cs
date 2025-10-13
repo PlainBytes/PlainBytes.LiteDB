@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Xunit;
 
-namespace LiteDB.Tests.Utils.Extensions;
+namespace PlainBytes.LiteDB.Tests.Utils.Extensions;
 
 public class ExpressionExtensions_Tests
 {

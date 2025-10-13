@@ -1,11 +1,11 @@
 using System;
-using LiteDB;
+using PlainBytes.LiteDB;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Xunit;
 
-namespace LiteDB.Tests.Client;
+namespace PlainBytes.LiteDB.Tests.Client;
 
 public class LiteRepository_Tests
 {

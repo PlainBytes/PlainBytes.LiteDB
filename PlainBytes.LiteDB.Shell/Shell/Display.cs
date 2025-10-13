@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace LiteDB.Shell
+namespace PlainBytes.LiteDB.Shell
 {
     internal class Display
     {
@@ -16,7 +16,7 @@ namespace LiteDB.Shell
 
         public void WriteWelcome()
         {
-            this.WriteInfo("Welcome to LiteDB Shell");
+            this.WriteInfo("Welcome to PlainBytes.LiteDB Shell");
             this.WriteInfo("");
             this.WriteInfo("Getting started with `help`");
             this.WriteInfo("");

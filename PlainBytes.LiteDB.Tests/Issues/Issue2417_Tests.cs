@@ -1,12 +1,12 @@
 ﻿using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using System;
 using System.IO;
 using System.Linq;
 
 using Xunit;
 
-namespace LiteDB.Tests.Issues
+namespace PlainBytes.LiteDB.Tests.Issues
 {
     public class Issue2417_Tests
     {

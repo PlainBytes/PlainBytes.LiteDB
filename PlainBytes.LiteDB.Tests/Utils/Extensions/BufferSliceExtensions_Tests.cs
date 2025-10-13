@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using Xunit;
 
-namespace LiteDB.Tests.Utils.Extensions;
+namespace PlainBytes.LiteDB.Tests.Utils.Extensions;
 
 public class BufferSliceExtensions_Tests
 {

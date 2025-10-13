@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using BenchmarkDotNet.Attributes;
-using LiteDB.Benchmarks.Models;
-using LiteDB.Benchmarks.Models.Generators;
+using PlainBytes.LiteDB.Benchmarks.Models;
+using PlainBytes.LiteDB.Benchmarks.Models.Generators;
 
-namespace LiteDB.Benchmarks.Benchmarks.Insertion
+namespace PlainBytes.LiteDB.Benchmarks.Benchmarks.Insertion
 {
 	[BenchmarkCategory(Constants.Categories.INSERTION)]
 	public class InsertionIgnoreExpressionPropertyBenchmark : BenchmarkBase

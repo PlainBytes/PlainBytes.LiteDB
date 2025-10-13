@@ -2,9 +2,9 @@
 using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Read multiple array segment as a single linear segment - Forward Only

@@ -1,11 +1,11 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Implement some Enumerable methods to IBsonDataReader

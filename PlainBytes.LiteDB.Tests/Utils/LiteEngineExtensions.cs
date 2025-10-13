@@ -1,8 +1,8 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LiteDB.Tests
+namespace PlainBytes.LiteDB.Tests
 {
     public static class LiteEngineExtensions
     {
@@ -18,7 +18,7 @@ namespace LiteDB.Tests
 
         public static List<BsonDocument> Find(this LiteEngine engine, string collection, BsonExpression where)
         {
-            var q = new LiteDB.Query();
+            var q = new PlainBytes.LiteDB.Query();
 
             if (where != null)
             {

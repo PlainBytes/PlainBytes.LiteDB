@@ -1,7 +1,7 @@
 ﻿using System;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
 
     /// <summary>

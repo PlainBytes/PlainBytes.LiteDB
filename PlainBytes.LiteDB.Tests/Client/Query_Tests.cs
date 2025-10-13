@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using Xunit;
 
-namespace LiteDB.Tests.Client;
+namespace PlainBytes.LiteDB.Tests.Client;
 
 public class Query_Tests
 {

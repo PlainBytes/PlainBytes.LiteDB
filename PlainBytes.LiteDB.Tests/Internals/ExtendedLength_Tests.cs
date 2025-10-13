@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class ExtendedLength_Tests
     {

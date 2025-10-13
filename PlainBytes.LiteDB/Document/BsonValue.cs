@@ -1,12 +1,12 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Represent a Bson Value used in BsonDocument

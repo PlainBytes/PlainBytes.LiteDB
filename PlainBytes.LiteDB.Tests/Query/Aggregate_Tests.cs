@@ -8,9 +8,9 @@
 //using System.Text;
 //using System.Reflection;
 //using System.Text.RegularExpressions;
-//using LiteDB.Engine;
+//using PlainBytes.LiteDB.Engine;
 
-//namespace LiteDB.Tests.QueryTest
+//namespace PlainBytes.LiteDB.Tests.QueryTest
 //{
 //    [TestClass]
 //    public class Aggregate_Tests

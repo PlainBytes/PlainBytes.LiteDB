@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Xml;
 
-namespace LiteDB.Stress
+namespace PlainBytes.LiteDB.Stress
 {
     public class TestExecution
     {

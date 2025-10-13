@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace LiteDB.Tests.Issues;
+namespace PlainBytes.LiteDB.Tests.Issues;
 
 public class Issue2534_Tests
 {

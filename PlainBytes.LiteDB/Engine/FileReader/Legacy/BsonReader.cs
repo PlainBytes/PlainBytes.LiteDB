@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Internal class to deserialize a byte[] into a BsonDocument using BSON data format

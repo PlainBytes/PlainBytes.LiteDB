@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 using Xunit;
 
-namespace LiteDB.Tests.Issues;
+namespace PlainBytes.LiteDB.Tests.Issues;
 
 public class Issue2487_tests
 {

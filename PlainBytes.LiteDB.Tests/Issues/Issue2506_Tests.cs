@@ -2,7 +2,7 @@
 using System.IO;
 using Xunit;
 
-namespace LiteDB.Tests.Issues;
+namespace PlainBytes.LiteDB.Tests.Issues;
 
 public class Issue2506_Tests
 {
