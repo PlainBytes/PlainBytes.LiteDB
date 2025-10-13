@@ -1,7 +1,4 @@
-﻿using System;
-using static PlainBytes.LiteDB.Constants;
-
-namespace PlainBytes.LiteDB.Engine
+﻿namespace PlainBytes.LiteDB.Engine
 {
     internal class DataBlock
     {

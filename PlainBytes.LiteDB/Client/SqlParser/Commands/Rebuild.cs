@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using PlainBytes.LiteDB.Engine;
-using static PlainBytes.LiteDB.Constants;
+﻿using PlainBytes.LiteDB.Engine;
 
 namespace PlainBytes.LiteDB
 {

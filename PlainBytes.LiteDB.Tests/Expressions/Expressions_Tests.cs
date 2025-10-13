@@ -1,5 +1,4 @@
-﻿using AwesomeAssertions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Expressions

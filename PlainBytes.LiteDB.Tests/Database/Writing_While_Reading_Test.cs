@@ -1,5 +1,4 @@
-﻿using System.IO;
-using Xunit;
+﻿using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Database;
 

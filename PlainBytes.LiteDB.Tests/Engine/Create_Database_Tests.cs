@@ -1,7 +1,4 @@
-﻿using PlainBytes.LiteDB.Engine;
-using Xunit;
-
-namespace PlainBytes.LiteDB.Tests.Engine
+﻿namespace PlainBytes.LiteDB.Tests.Engine
 {
     /*public class Create_Database_Tests
     {

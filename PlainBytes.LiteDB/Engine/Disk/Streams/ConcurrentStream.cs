@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB.Engine
 {

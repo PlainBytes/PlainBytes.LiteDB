@@ -2,7 +2,6 @@
 using System;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB

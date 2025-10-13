@@ -5,7 +5,6 @@ using PlainBytes.LiteDB.Engine;
 using Xunit;
 using System.Threading.Tasks;
 using System.Threading;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB.Internals
 {

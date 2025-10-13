@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using PlainBytes.LiteDB;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Client.Collections

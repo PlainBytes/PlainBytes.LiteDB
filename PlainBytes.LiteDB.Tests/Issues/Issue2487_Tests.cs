@@ -1,7 +1,4 @@
 ﻿using AwesomeAssertions;
-
-using System.Diagnostics;
-
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Issues;

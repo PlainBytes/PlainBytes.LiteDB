@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using PlainBytes.LiteDB.Engine;
-using static PlainBytes.LiteDB.Constants;
-
-namespace PlainBytes.LiteDB
+﻿namespace PlainBytes.LiteDB
 {
     internal partial class SqlParser
     {

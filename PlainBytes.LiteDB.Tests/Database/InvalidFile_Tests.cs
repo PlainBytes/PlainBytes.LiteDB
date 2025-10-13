@@ -1,8 +1,5 @@
 using System;
 using System.IO;
-using System.Linq;
-using System.Collections.Generic;
-using AwesomeAssertions;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Database

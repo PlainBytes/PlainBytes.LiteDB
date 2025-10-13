@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PlainBytes.LiteDB.Engine
+﻿namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Interface for abstract document lookup that can be direct from datafile or by virtual collections

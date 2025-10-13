@@ -1,8 +1,5 @@
-using System;
-using PlainBytes.LiteDB;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Client;

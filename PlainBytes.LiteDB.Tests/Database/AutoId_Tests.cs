@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
-using PlainBytes.LiteDB;
 using AwesomeAssertions;
 using Xunit;
 
