@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 
-namespace LiteDB.Tests.Issues
+namespace PlainBytes.LiteDB.Tests.Issues
 {
     public class Issue2127_Tests
     {

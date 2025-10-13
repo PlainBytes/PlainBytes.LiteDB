@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 
-namespace LiteDB;
+namespace PlainBytes.LiteDB;
 
 public partial class BsonMapper
 {

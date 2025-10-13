@@ -6,12 +6,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
-    /// Internal class to read old LiteDB v4 database version (datafile v7 structure)
+    /// Internal class to read old PlainBytes.LiteDB v4 database version (datafile v7 structure)
     /// </summary>
     internal class FileReaderV7 : IFileReader
     {
@@ -76,7 +76,7 @@ namespace LiteDB.Engine
         }
 
         /// <summary>
-        /// Check header slots to test if data file is a LiteDB FILE_VERSION = v7
+        /// Check header slots to test if data file is a PlainBytes.LiteDB FILE_VERSION = v7
         /// </summary>
         public static bool IsVersion(byte[] buffer)
         {

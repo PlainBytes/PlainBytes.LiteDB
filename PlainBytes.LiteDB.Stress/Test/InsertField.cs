@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 
-namespace LiteDB.Stress
+namespace PlainBytes.LiteDB.Stress
 {
     public enum InsertFieldType { Name, Int, Guid, Bool, Now, Binary, Date, Json }
 

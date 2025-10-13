@@ -1,4 +1,4 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Security.AccessControl;
 using System.Security.Principal;
 using System.Threading;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     public class SharedEngine : ILiteEngine
     {

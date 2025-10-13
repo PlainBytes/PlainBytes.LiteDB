@@ -1,4 +1,4 @@
-using LiteDB;
+using PlainBytes.LiteDB;
 using AwesomeAssertions;
 using Xunit;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class Contains_Tests
     {

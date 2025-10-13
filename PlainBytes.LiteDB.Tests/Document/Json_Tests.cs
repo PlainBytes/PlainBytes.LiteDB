@@ -3,7 +3,7 @@ using System.Globalization;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Document
+namespace PlainBytes.LiteDB.Tests.Document
 {
     public class Json_Tests
     {

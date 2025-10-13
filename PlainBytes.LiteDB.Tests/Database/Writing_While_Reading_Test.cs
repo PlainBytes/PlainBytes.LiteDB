@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Xunit;
 
-namespace LiteDB.Tests.Database;
+namespace PlainBytes.LiteDB.Tests.Database;
 
 public class Writing_While_Reading_Test
 {

@@ -1,5 +1,5 @@
 ﻿using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using System;
 using System.IO;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Linq;
 using Xunit;
 
 #if DEBUG
-namespace LiteDB.Tests.Engine
+namespace PlainBytes.LiteDB.Tests.Engine
 {
     public class Rebuild_Crash_Tests
     {

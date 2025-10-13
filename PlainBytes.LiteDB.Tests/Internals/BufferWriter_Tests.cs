@@ -2,11 +2,11 @@
 using System.Linq;
 using System.Text;
 using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using System.Collections.Generic;
 using Xunit;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class BufferWriter_Tests
     {

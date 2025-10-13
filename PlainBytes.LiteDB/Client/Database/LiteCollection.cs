@@ -1,9 +1,9 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections.Generic;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     public sealed partial class LiteCollection<T> : ILiteCollection<T>
     {

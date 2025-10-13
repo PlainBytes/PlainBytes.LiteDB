@@ -1,12 +1,12 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using System.Threading;
 using AwesomeAssertions;
 using Xunit;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Internals
+namespace PlainBytes.LiteDB.Internals
 {
     public class CacheAsync_Tests
     {

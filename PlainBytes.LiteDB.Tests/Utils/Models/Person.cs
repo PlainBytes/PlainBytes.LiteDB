@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LiteDB.Tests
+namespace PlainBytes.LiteDB.Tests
 {
     public class Person : IEqualityComparer<Person>, IComparable<Person>
     {

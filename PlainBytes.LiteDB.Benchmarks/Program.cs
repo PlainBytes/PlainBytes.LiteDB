@@ -6,7 +6,7 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Toolchains.CsProj;
 
-namespace LiteDB.Benchmarks
+namespace PlainBytes.LiteDB.Benchmarks
 {
     class Program
     {

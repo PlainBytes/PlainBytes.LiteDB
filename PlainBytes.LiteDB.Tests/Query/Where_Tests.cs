@@ -2,7 +2,7 @@
 using System.Linq;
 using Xunit;
 
-namespace LiteDB.Tests.QueryTest
+namespace PlainBytes.LiteDB.Tests.QueryTest
 {
     public class Where_Tests : PersonQueryData
     {

@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     public partial class LiteEngine
     {
@@ -45,10 +45,10 @@ namespace LiteDB.Engine
         }
 
         /// <summary>
-        /// Upgrade old version of LiteDB into new LiteDB file structure. Returns true if database was completed converted
+        /// Upgrade old version of PlainBytes.LiteDB into new PlainBytes.LiteDB file structure. Returns true if database was completed converted
         /// If database already in current version just return false
         /// </summary>
-        [Obsolete("Upgrade your LiteDB v4 datafiles using Upgrade=true in EngineSettings. You can use upgrade=true in connection string.")]
+        [Obsolete("Upgrade your PlainBytes.LiteDB v4 datafiles using Upgrade=true in EngineSettings. You can use upgrade=true in connection string.")]
         public static bool Upgrade(string filename, string password = null, Collation collation = null)
         {
             if (filename.IsNullOrWhiteSpace()) throw new ArgumentNullException(nameof(filename));

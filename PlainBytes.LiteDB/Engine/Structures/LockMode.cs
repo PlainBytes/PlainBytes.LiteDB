@@ -1,4 +1,4 @@
-﻿namespace LiteDB.Engine
+﻿namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Represents a snapshot lock mode

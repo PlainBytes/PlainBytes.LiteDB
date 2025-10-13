@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Engine
+namespace PlainBytes.LiteDB.Tests.Engine
 {
     public class ParallelQuery_Tests
     {

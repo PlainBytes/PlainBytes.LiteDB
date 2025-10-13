@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class Randomizer_Tests
 {

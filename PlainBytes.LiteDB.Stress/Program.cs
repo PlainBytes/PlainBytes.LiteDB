@@ -1,5 +1,5 @@
-﻿using LiteDB;
-using LiteDB.Engine;
+﻿using PlainBytes.LiteDB;
+using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace LiteDB.Stress
+namespace PlainBytes.LiteDB.Stress
 {
     public class Program
     {

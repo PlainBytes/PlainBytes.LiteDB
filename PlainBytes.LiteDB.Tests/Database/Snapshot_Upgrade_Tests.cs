@@ -4,7 +4,7 @@ using System.Linq;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class Snapshot_Upgrade_Tests
     {

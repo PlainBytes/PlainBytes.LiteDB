@@ -1,4 +1,4 @@
-﻿using LiteDB.Utils.Extensions;
+﻿using PlainBytes.LiteDB.Utils.Extensions;
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 using Xunit;
 
-namespace LiteDB.Tests.Internals;
+namespace PlainBytes.LiteDB.Tests.Internals;
 
 public class Extensions_Test
 {

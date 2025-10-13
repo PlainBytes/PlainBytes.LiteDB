@@ -3,10 +3,10 @@ using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-using LiteDB.Utils;
-using static LiteDB.Constants;
+using PlainBytes.LiteDB.Utils;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Implement custom fast/in memory mapped disk access

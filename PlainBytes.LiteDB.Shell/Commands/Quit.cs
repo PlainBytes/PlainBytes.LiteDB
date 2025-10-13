@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LiteDB.Shell.Commands
+namespace PlainBytes.LiteDB.Shell.Commands
 {
     [Help(
         Name = "quit",

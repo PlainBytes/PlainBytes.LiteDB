@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace LiteDB.Tests.Client;
+namespace PlainBytes.LiteDB.Tests.Client;
 
 public class QueryAny_Tests
 {

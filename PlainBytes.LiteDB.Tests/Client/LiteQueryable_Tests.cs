@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using LiteDB;
+using PlainBytes.LiteDB;
 using Xunit;
 
-namespace LiteDB.Tests.Client;
+namespace PlainBytes.LiteDB.Tests.Client;
 
 public class LiteQueryable_Tests
 {

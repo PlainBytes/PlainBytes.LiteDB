@@ -2,7 +2,7 @@
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Document
+namespace PlainBytes.LiteDB.Tests.Document
 {
     public class Case_Insensitive_Tests
     {

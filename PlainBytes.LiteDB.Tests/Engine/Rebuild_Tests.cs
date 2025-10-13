@@ -1,12 +1,12 @@
 ﻿using AwesomeAssertions;
-using LiteDB.Engine;
+using PlainBytes.LiteDB.Engine;
 using System;
 using System.IO;
 using System.Linq;
 
 using Xunit;
 
-namespace LiteDB.Tests.Engine
+namespace PlainBytes.LiteDB.Tests.Engine
 {
     public class Rebuild_Tests
     {

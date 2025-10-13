@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using AwesomeAssertions;
 
-namespace LiteDB.Tests
+namespace PlainBytes.LiteDB.Tests
 {
     /// <summary>
     /// Extension and additional methods for debug

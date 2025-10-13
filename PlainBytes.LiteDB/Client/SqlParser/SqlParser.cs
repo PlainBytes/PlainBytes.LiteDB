@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using LiteDB.Engine;
-using static LiteDB.Constants;
+using PlainBytes.LiteDB.Engine;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Internal class to parse and execute sql-like commands

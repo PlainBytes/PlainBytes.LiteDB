@@ -2,7 +2,7 @@
 //using AwesomeAssertions;
 //using Xunit;
 
-//namespace LiteDB.Tests.Database
+//namespace PlainBytes.LiteDB.Tests.Database
 //{
 //    public class DbRef_Interface_Tests
 //    {

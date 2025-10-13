@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using Xunit;
 
-namespace LiteDB.Tests.Utils.Extensions;
+namespace PlainBytes.LiteDB.Tests.Utils.Extensions;
 
 public class StringExtensions_Tests
 {

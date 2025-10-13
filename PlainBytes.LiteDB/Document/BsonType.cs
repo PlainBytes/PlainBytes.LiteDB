@@ -1,4 +1,4 @@
-﻿namespace LiteDB
+﻿namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// All supported BsonTypes in sort order

@@ -1,4 +1,4 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 
 using System;
 using System.Diagnostics;
@@ -10,12 +10,12 @@ using System.Threading;
 [assembly: InternalsVisibleTo("ConsoleApp1")]
 #endif
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     using System.Globalization;
 
     /// <summary>
-    /// Class with all constants used in LiteDB + Debbuger HELPER
+    /// Class with all constants used in PlainBytes.LiteDB + Debbuger HELPER
     /// </summary>
     internal class Constants
     {

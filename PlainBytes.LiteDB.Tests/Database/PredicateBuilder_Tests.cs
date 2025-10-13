@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Database
+namespace PlainBytes.LiteDB.Tests.Database
 {
     public class PredicateBuilder_Tests
     {

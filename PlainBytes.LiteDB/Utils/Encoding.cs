@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     internal class StringEncoding
     {

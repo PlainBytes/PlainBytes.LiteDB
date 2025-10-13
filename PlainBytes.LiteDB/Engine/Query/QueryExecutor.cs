@@ -1,12 +1,12 @@
-using LiteDB.Utils.Extensions;
+using PlainBytes.LiteDB.Utils.Extensions;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Class that execute QueryPlan returing results

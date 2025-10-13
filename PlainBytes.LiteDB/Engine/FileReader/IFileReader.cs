@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
-    /// Interface to read current or old datafile structure - Used to shirnk/upgrade datafile from old LiteDB versions
+    /// Interface to read current or old datafile structure - Used to shirnk/upgrade datafile from old PlainBytes.LiteDB versions
     /// </summary>
     interface IFileReader : IDisposable
     {

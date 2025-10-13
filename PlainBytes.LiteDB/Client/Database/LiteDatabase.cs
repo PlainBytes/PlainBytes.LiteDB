@@ -4,13 +4,13 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading;
-using LiteDB.Engine;
-using static LiteDB.Constants;
+using PlainBytes.LiteDB.Engine;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
-    /// The LiteDB database. Used for create a LiteDB instance and use all storage resources. It's the database connection
+    /// The PlainBytes.LiteDB database. Used for create a PlainBytes.LiteDB instance and use all storage resources. It's the database connection
     /// </summary>
     public partial class LiteDatabase : ILiteDatabase
     {
@@ -30,7 +30,7 @@ namespace LiteDB
         #region Ctor
 
         /// <summary>
-        /// Starts LiteDB database using a connection string for file system database
+        /// Starts PlainBytes.LiteDB database using a connection string for file system database
         /// </summary>
         public LiteDatabase(string connectionString, BsonMapper mapper = null)
             : this(new ConnectionString(connectionString), mapper)
@@ -38,7 +38,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Starts LiteDB database using a connection string for file system database
+        /// Starts PlainBytes.LiteDB database using a connection string for file system database
         /// </summary>
         public LiteDatabase(ConnectionString connectionString, BsonMapper mapper = null)
         {
@@ -50,7 +50,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Starts LiteDB database using a generic Stream implementation (mostly MemoryStream).
+        /// Starts PlainBytes.LiteDB database using a generic Stream implementation (mostly MemoryStream).
         /// </summary>
         /// <param name="stream">DataStream reference </param>
         /// <param name="mapper">BsonMapper mapper reference</param>
@@ -69,7 +69,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Start LiteDB database using a pre-exiting engine. When LiteDatabase instance dispose engine instance will be disposed too
+        /// Start PlainBytes.LiteDB database using a pre-exiting engine. When LiteDatabase instance dispose engine instance will be disposed too
         /// </summary>
         public LiteDatabase(ILiteEngine engine, BsonMapper mapper = null, bool disposeOnClose = true)
         {
@@ -155,7 +155,7 @@ namespace LiteDB
         }
 
         /// <summary>
-        /// Get new instance of Storage using custom FileId type, custom "_files" collection name and custom "_chunks" collection. LiteDB support multiples file storages (using different files/chunks collection names)
+        /// Get new instance of Storage using custom FileId type, custom "_files" collection name and custom "_chunks" collection. PlainBytes.LiteDB support multiples file storages (using different files/chunks collection names)
         /// </summary>
         public ILiteStorage<TFileId> GetStorage<TFileId>(string filesCollection = "_files", string chunksCollection = "_chunks")
         {

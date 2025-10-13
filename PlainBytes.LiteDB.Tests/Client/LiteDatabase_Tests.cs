@@ -1,10 +1,10 @@
 using System;
 using System.IO;
 using System.Linq;
-using LiteDB;
+using PlainBytes.LiteDB;
 using Xunit;
 
-namespace LiteDB.Tests.Client;
+namespace PlainBytes.LiteDB.Tests.Client;
 
 public class LiteDatabase_Tests
 {

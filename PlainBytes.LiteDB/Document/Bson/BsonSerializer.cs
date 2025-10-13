@@ -1,10 +1,10 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
     /// Class to call method for convert BsonDocument to/from byte[] - based on http://bsonspec.org/spec.html

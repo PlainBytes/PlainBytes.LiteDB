@@ -1,14 +1,14 @@
-﻿using LiteDB.Engine;
+﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB
+namespace PlainBytes.LiteDB
 {
     /// <summary>
-    /// The main exception for LiteDB
+    /// The main exception for PlainBytes.LiteDB
     /// </summary>
     public class LiteException : Exception
     {
@@ -110,7 +110,7 @@ namespace LiteDB
 
         internal static LiteException InvalidDatabase()
         {
-            return new LiteException(INVALID_DATABASE, "File is not a valid LiteDB database format or contains a invalid password.");
+            return new LiteException(INVALID_DATABASE, "File is not a valid PlainBytes.LiteDB database format or contains a invalid password.");
         }
 
         internal static LiteException FileSizeExceeded(long limit)

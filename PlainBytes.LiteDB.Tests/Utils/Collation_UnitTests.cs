@@ -1,7 +1,7 @@
 using System.Globalization;
 using Xunit;
 
-namespace LiteDB.Tests.Utils;
+namespace PlainBytes.LiteDB.Tests.Utils;
 
 public class Collation_UnitTests
 {

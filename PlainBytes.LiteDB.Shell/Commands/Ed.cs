@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 
-namespace LiteDB.Shell.Commands
+namespace PlainBytes.LiteDB.Shell.Commands
 {
     [Help(
         Name = "ed",

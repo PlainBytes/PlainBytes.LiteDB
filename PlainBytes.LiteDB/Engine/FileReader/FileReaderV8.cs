@@ -7,9 +7,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Internal class to read all datafile documents - use only Stream - no cache system. Read log file (read commited transtraction)
@@ -431,7 +431,7 @@ namespace LiteDB.Engine
         }
 
         /// <summary>
-        /// Check header slots to test if data file is a LiteDB FILE_VERSION = v8
+        /// Check header slots to test if data file is a PlainBytes.LiteDB FILE_VERSION = v8
         /// </summary>
         public static bool IsVersion(byte[] buffer)
         {

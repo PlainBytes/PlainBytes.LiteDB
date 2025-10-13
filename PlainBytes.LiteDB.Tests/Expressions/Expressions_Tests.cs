@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xunit;
 
-namespace LiteDB.Tests.Expressions
+namespace PlainBytes.LiteDB.Tests.Expressions
 {
     public class Expressions_Tests
     {

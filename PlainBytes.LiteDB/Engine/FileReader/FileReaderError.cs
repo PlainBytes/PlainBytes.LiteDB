@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-using static LiteDB.Constants;
+using static PlainBytes.LiteDB.Constants;
 
-namespace LiteDB.Engine
+namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// </summary>

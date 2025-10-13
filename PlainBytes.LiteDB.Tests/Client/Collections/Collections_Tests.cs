@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using LiteDB;
+using PlainBytes.LiteDB;
 using Xunit;
 
-namespace LiteDB.Tests.Client.Collections
+namespace PlainBytes.LiteDB.Tests.Client.Collections
 {
     public class Collections_Tests
     {

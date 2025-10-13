@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LiteDB.Utils.Extensions
+namespace PlainBytes.LiteDB.Utils.Extensions
 {
     internal static class EnumerableExtensions
     {

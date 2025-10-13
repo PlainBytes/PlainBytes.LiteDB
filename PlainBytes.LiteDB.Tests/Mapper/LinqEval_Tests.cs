@@ -6,7 +6,7 @@ using System.Diagnostics;
 using AwesomeAssertions;
 using Xunit;
 
-namespace LiteDB.Tests.Mapper
+namespace PlainBytes.LiteDB.Tests.Mapper
 {
     public class LinqEval_Tests
     {
