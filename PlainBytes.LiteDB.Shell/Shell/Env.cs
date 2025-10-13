@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using PlainBytes.LiteDB;
-
-namespace PlainBytes.LiteDB.Shell
+﻿namespace PlainBytes.LiteDB.Shell
 {
     internal class Env
     {

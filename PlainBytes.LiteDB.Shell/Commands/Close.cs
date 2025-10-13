@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace PlainBytes.LiteDB.Shell.Commands
+﻿namespace PlainBytes.LiteDB.Shell.Commands
 {
     [Help(
         Name = "close",

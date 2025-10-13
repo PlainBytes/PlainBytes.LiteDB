@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using AwesomeAssertions;
-using PlainBytes.LiteDB.Engine;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Issues

@@ -1,5 +1,4 @@
 ﻿using System;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB
 {

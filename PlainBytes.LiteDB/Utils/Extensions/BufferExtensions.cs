@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Linq;
 using System.Text;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB
 {

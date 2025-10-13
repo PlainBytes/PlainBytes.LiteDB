@@ -1,6 +1,4 @@
-﻿using AwesomeAssertions;
-using System;
-using System.Linq;
+﻿using System.Linq;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.QueryTest

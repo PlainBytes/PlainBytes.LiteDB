@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Linq;
-using System.Text;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Collections;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB
 {

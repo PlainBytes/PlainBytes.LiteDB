@@ -3,7 +3,6 @@ using System.Linq;
 using System.Text;
 using AwesomeAssertions;
 using PlainBytes.LiteDB.Engine;
-using System.Collections.Generic;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Internals

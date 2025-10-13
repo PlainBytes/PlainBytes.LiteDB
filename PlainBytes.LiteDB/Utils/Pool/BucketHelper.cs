@@ -1,5 +1,4 @@
 using System.Runtime.CompilerServices;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB
 {

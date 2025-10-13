@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using static PlainBytes.LiteDB.Constants;
-
-namespace PlainBytes.LiteDB.Engine
+﻿namespace PlainBytes.LiteDB.Engine
 {
     /// <summary>
     /// Represents a page position after save in disk. Used in WAL files where PageID do not match with PagePosition

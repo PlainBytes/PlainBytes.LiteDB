@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Utils.Extensions;

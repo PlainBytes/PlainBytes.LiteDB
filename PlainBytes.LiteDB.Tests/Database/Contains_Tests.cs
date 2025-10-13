@@ -1,4 +1,3 @@
-using PlainBytes.LiteDB;
 using AwesomeAssertions;
 using Xunit;
 using System.IO;

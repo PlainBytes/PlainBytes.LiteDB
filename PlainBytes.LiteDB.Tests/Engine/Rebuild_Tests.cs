@@ -1,9 +1,5 @@
 ﻿using AwesomeAssertions;
 using PlainBytes.LiteDB.Engine;
-using System;
-using System.IO;
-using System.Linq;
-
 using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Engine

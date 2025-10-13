@@ -1,9 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Text.RegularExpressions;
-using static PlainBytes.LiteDB.Constants;
-
-namespace PlainBytes.LiteDB.Engine
+﻿namespace PlainBytes.LiteDB.Engine
 {
     internal class CollectionIndex
     {

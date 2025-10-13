@@ -4,7 +4,6 @@ using PlainBytes.LiteDB.Engine;
 using System.Threading;
 using AwesomeAssertions;
 using Xunit;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB.Internals
 {

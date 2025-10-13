@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using AwesomeAssertions;
-using Xunit;
+﻿using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Mapper
 {

@@ -1,10 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using PlainBytes.LiteDB;
-using AwesomeAssertions;
+﻿using AwesomeAssertions;
 using Xunit;
-using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
 
 namespace PlainBytes.LiteDB.Tests.Database
 {

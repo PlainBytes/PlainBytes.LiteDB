@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using AwesomeAssertions;
-using Xunit;
+﻿using Xunit;
 
 namespace PlainBytes.LiteDB.Tests.Database
 {

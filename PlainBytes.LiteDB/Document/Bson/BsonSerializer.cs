@@ -1,8 +1,6 @@
 ﻿using PlainBytes.LiteDB.Engine;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using static PlainBytes.LiteDB.Constants;
 
 namespace PlainBytes.LiteDB
 {

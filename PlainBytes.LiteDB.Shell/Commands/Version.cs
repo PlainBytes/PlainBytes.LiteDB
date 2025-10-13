@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PlainBytes.LiteDB.Shell.Commands
+﻿namespace PlainBytes.LiteDB.Shell.Commands
 {
     [Help(
         Name = "version",
