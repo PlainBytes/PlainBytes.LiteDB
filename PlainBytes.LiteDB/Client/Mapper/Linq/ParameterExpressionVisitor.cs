@@ -7,11 +7,11 @@ namespace PlainBytes.LiteDB
     /// </summary>
     internal class ParameterExpressionVisitor : ExpressionVisitor
     {
-        public bool IsParameter { get; private set; } = false;
+        private bool IsParameter { get; set; }
 
         protected override Expression VisitParameter(ParameterExpression node)
         {
-            this.IsParameter = true;
+            IsParameter = true;
 
             return base.VisitParameter(node);
         }

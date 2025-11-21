@@ -59,7 +59,7 @@ namespace PlainBytes.LiteDB.Engine
 
             stream.Position = position;
 
-            stream.Read(buffer.Array, buffer.Offset, buffer.Count);
+            stream.ReadExactly(buffer.Array, buffer.Offset, buffer.Count);
 
             DEBUG(buffer.All(0) == false, "check if are not reading out of file length");
         }

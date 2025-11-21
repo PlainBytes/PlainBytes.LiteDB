@@ -31,7 +31,7 @@ namespace PlainBytes.LiteDB.Engine
 
 
                 stream.Position = 0;
-                stream.Read(buffer, 0, bufferSize);
+                stream.ReadExactly(buffer, 0, bufferSize);
 
                 if (FileReaderV7.IsVersion(buffer) == false) return;
             }

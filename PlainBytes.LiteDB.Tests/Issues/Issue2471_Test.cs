@@ -82,7 +82,7 @@ public class Issue2471_Test
 
         // doing Phone query
         var queryPhone = col.Query()
-            .Where(x => x.Phones.Contains(3));
+            .Where(x => x.Phones.AsEnumerable().Contains(3));
 
         var planPhone = queryPhone.GetPlan();
 

@@ -20,10 +20,10 @@ namespace PlainBytes.LiteDB.Tests.Database
                 var collection = database.GetCollection<ItemWithEnumerable>();
                 collection.Insert(new ItemWithEnumerable
                 {
-                    Array = new int[] { randomValue }
+                    Array = [randomValue]
                 });
 
-                var result = collection.Find(i => i.Array.Contains(randomValue)).ToList();
+                var result = collection.Find(i => i.Array.AsEnumerable().Contains(randomValue)).ToList();
                 result.Should().HaveCount(1);
             }
         }
