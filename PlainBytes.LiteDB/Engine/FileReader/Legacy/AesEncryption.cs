@@ -18,7 +18,9 @@ namespace PlainBytes.LiteDB
             _aes.Padding = PaddingMode.Zeros;
 
 #pragma warning disable SYSLIB0041
+#pragma warning disable SYSLIB0060
             var pdb = new Rfc2898DeriveBytes(password, salt);
+#pragma warning restore SYSLIB0060
 #pragma warning restore SYSLIB0041
 
             using (pdb as IDisposable)
@@ -41,7 +43,7 @@ namespace PlainBytes.LiteDB
                 crypto.FlushFinalBlock();
                 stream.Position = 0;
                 var encrypted = new byte[stream.Length];
-                stream.Read(encrypted, 0, encrypted.Length);
+                stream.ReadExactly(encrypted, 0, encrypted.Length);
 
                 return encrypted;
             }
@@ -60,7 +62,7 @@ namespace PlainBytes.LiteDB
                 crypto.FlushFinalBlock();
                 stream.Position = 0;
                 var decryptedBytes = new byte[stream.Length];
-                stream.Read(decryptedBytes, 0, decryptedBytes.Length);
+                stream.ReadExactly(decryptedBytes, 0, decryptedBytes.Length);
 
                 return decryptedBytes;
             }

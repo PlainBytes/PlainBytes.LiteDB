@@ -46,6 +46,8 @@ namespace PlainBytes.LiteDB
 
         public LinqExpressionVisitor(BsonMapper mapper, Expression expr)
         {
+            ArgumentNullException.ThrowIfNull(expr);
+            
             _mapper = mapper;
             _expr = expr;
 
@@ -69,17 +71,17 @@ namespace PlainBytes.LiteDB
 
             try
             {
-                var e = BsonExpression.Create(expression, _parameters);
+                var bsonExpression = BsonExpression.Create(expression, _parameters);
 
                 // if expression must return an predicate but expression result is Path/Parameter/Call add `= true`
-                if (predicate && (e.Type == BsonExpressionType.Path || e.Type == BsonExpressionType.Call || e.Type == BsonExpressionType.Parameter))
+                if (predicate && (bsonExpression.Type == BsonExpressionType.Path || bsonExpression.Type == BsonExpressionType.Call || bsonExpression.Type == BsonExpressionType.Parameter))
                 {
                     expression = "(" + expression + " = true)";
 
-                    e = BsonExpression.Create(expression, _parameters);
+                    bsonExpression = BsonExpression.Create(expression, _parameters);
                 }
 
-                return e;
+                return bsonExpression;
             }
             catch (Exception ex)
             {

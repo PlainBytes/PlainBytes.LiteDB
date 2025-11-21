@@ -115,7 +115,7 @@ namespace PlainBytes.LiteDB.Engine
             using (var stream = factory.GetStream(false, true))
             {
                 stream.Position = 0;
-                stream.Read(buffer, 0, buffer.Length);
+                stream.ReadExactly(buffer, 0, buffer.Length);
             }
 
             return buffer;

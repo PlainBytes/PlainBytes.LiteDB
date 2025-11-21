@@ -23,8 +23,6 @@ namespace PlainBytes.LiteDB.Engine
 
         private readonly byte[] _decryptedZeroes = new byte[16];
 
-        private static readonly byte[] _emptyContent = new byte[PAGE_SIZE - 1 - 16]; // 1 for aes indicator + 16 for salt
-
         private static readonly ArrayPool<byte> _bufferPool = ArrayPool<byte>.Shared;
 
         public byte[] Salt { get; }
@@ -83,7 +81,7 @@ namespace PlainBytes.LiteDB.Engine
                         throw LiteException.FileNotEncrypted();
                     }
 
-                    _stream.Read(this.Salt, 0, ENCRYPTION_SALT_SIZE);
+                    _stream.ReadExactly(this.Salt, 0, ENCRYPTION_SALT_SIZE);
                 }
 
                 _aes = Aes.Create();
@@ -91,7 +89,9 @@ namespace PlainBytes.LiteDB.Engine
                 _aes.Mode = CipherMode.ECB;
 
 #pragma warning disable SYSLIB0041
+#pragma warning disable SYSLIB0060
                 var pdb = new Rfc2898DeriveBytes(password, this.Salt);
+#pragma warning restore SYSLIB0060
 #pragma warning restore SYSLIB0041
 
                 using (pdb as IDisposable)
@@ -114,11 +114,10 @@ namespace PlainBytes.LiteDB.Engine
                 // set stream to password checking
                 _stream.Position = 32;
 
-
                 if (!isNew)
                 {
                     // check whether bytes 32 to 64 is empty. This indicates PlainBytes.LiteDB was unable to write encrypted 1s during last attempt.
-                    _stream.Read(checkBuffer, 0, checkBufferSize);
+                    _stream.ReadExactly(checkBuffer, 0, checkBufferSize);
                     isNew = checkBuffer.All(x => x == 0);
 
                     // reset checkBuffer and stream position
@@ -139,7 +138,7 @@ namespace PlainBytes.LiteDB.Engine
                 }
                 else
                 {
-                    _reader.Read(checkBuffer, 0, checkBufferSize);
+                    _reader.ReadExactly(checkBuffer, 0, checkBufferSize);
 
                     if (!checkBuffer.All(x => x == 1))
                     {
@@ -152,7 +151,7 @@ namespace PlainBytes.LiteDB.Engine
                 using (var ms = new MemoryStream(msBuffer))
                 using (var tempStream = new CryptoStream(ms, _decryptor, CryptoStreamMode.Read))
                 {
-                    tempStream.Read(_decryptedZeroes, 0, _decryptedZeroes.Length);
+                    tempStream.ReadExactly(_decryptedZeroes, 0, _decryptedZeroes.Length);
                 }
             }
             catch

@@ -241,7 +241,7 @@ namespace PlainBytes.LiteDB.Engine
                 using (var stream = _dataFactory.GetStream(true, true))
                 {
                     var buffer = _bufferPool.Rent(PAGE_SIZE);
-                    stream.Read(buffer, 0, PAGE_SIZE);
+                    stream.ReadExactly(buffer, 0, PAGE_SIZE);
                     buffer[HeaderPage.P_INVALID_DATAFILE_STATE] = 1;
                     stream.Position = 0;
                     stream.Write(buffer, 0, PAGE_SIZE);

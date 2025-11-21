@@ -122,7 +122,7 @@ namespace PlainBytes.LiteDB.Engine
             {
                 stream.Position = this.Position + _readPosition;
 
-                stream.Read(bytes, 0, PAGE_SIZE);
+                stream.ReadExactly(bytes, 0, PAGE_SIZE);
 
                 _readPosition += PAGE_SIZE;
 

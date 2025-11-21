@@ -214,12 +214,12 @@ namespace PlainBytes.LiteDB.Tests.Mapper
             TestExpr<User>(x => x.Phones.Last(), "$.Phones[-1]");
 
             // contains
-            TestExpr<User>(x => x.PhoneNumbers.Contains(1234), "PhoneNumbers ANY = @p0", 1234);
-            TestExpr<User>(x => x.Phones2.Contains(new Phone { Number = 1 }), "Phones2 ANY = { Number: @p0 }", 1);
+            TestExpr<User>(x => x.PhoneNumbers.AsEnumerable().Contains(1234), "PhoneNumbers ANY = @p0", 1234);
+            TestExpr<User>(x => x.Phones2.AsEnumerable().Contains(new Phone { Number = 1 }), "Phones2 ANY = { Number: @p0 }", 1);
 
             // negated contains
-            TestExpr<User>(x => !x.PhoneNumbers.Contains(1234), "(PhoneNumbers ANY = @p0) = false", 1234);
-            TestExpr<User>(x => !x.Phones2.Contains(new Phone { Number = 1 }), "(Phones2 ANY = { Number: @p0 }) = false", 1);
+            TestExpr<User>(x => !x.PhoneNumbers.AsEnumerable().Contains(1234), "(PhoneNumbers ANY = @p0) = false", 1234);
+            TestExpr<User>(x => !x.Phones2.AsEnumerable().Contains(new Phone { Number = 1 }), "(Phones2 ANY = { Number: @p0 }) = false", 1);
 
             // fixed position with filter expression
             TestExpr<User>(x => x.Phones.First(p => p.Number == 1), "FIRST(FILTER($.Phones=>(@.Number=@p0)))", 1);
@@ -265,7 +265,7 @@ namespace PlainBytes.LiteDB.Tests.Mapper
             var numbersArrayList = new ArrayList() { 1, 2, 3 };
             var numbersBson = new BsonArray(numbersArray.Select(x => new BsonValue(x)));
 
-            TestExpr<User>(x => numbersArray.Contains(x.Id), "@p0 ANY = _id", numbersBson);
+            TestExpr<User>(x => Enumerable.Contains(numbersArray, x.Id), "@p0 ANY = _id", numbersBson);
             TestExpr<User>(x => numbersList.Contains(x.Id), "@p0 ANY = _id", numbersBson);
             TestExpr<User>(x => numbersSet.Contains(x.Id), "@p0 ANY = _id", numbersBson);
             TestExpr<User>(x => numbersArrayList.Contains(x.Id), "@p0 ANY = _id", numbersBson);
@@ -495,8 +495,8 @@ namespace PlainBytes.LiteDB.Tests.Mapper
             var ids = new int[] { 1, 2, 3 };
             //var ids = new List<int> { 1, 2, 3 }; // works too
 
-            // the result are correct, but can be optimize (in QueryOptimzier) to `$._id IN @p0` (index will be used)
-            TestExpr<User>(x => ids.Contains(x.Id), "@p0 ANY = $._id", new BsonArray { 1, 2, 3 });
+            // the result are correct, but can be optimized (in QueryOptimizer) to `$._id IN @p0` (index will be used)
+            TestExpr<User>(x => Enumerable.Contains(ids, x.Id), "@p0 ANY = $._id", new BsonArray { 1, 2, 3 });
 
             TestExpr<User>(x => ids.Where(q => q == x.Id).Count() > 0, "(COUNT(FILTER(@p0 => (@=$._id))) > @p1)", new BsonArray { 1, 2, 3 }, 0);
         }
